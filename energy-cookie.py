@@ -4,26 +4,18 @@ import requests
 from datetime import date
 from bs4 import BeautifulSoup
 
-
 def welivesecurity():
-
     #slice current date and build list
-    day, month, year = date.today().day, date.today().month, date.today().year
+    month, year = date.today().month, date.today().year
     #download content
-    pagina = requests.get("https://www.welivesecurity.com/br/{}/{}/{}/".format(year, month, day))
+    pagina = requests.get("https://www.welivesecurity.com/br/{}/{}/".format(year, month))
 
-    src = pagina.content
-    soup = BeautifulSoup(src, 'lxml')
+    soup = BeautifulSoup(pagina.content, 'lxml')
 
-    #penetration within 'a' tag
-    links = soup.find_all('a')
+    links, news = soup.select('h2 > a'), []
 
-    news, date_key = {}, '{}/{}/{}'.format(day,month,year)
-
-    #links dentro da tag 'href' que conterem o paremetro fornecido, serao mostrados
-    for link in links:
-        if ("/br/{}/{}/{}".format(year,month,day) in link.attrs['href']) and (len(link.attrs['href']) > len('https://www.welivesecurity.com/br/{}/{}/{}/'.format(year,month,day))):
-            news[date_key] = link.attrs['href']
+    for index in range(len(links)):
+       news.append([links[index].attrs['title'], links[index].attrs['href']])
 
     return news
 
@@ -39,8 +31,19 @@ def scmagazine():
       link = index.attrs['href']
       all_content.append([unit_content[1], link])
 
-
    return all_content
 
+
+def thehackernews():
+    page = requests.get('https://thehackernews.com/', headers={"User-Agent": "news"})
+
+    soup = BeautifulSoup(page.content, 'lxml')
+
+    links, title, all_content = soup.select('.story-link'), soup.select('h2'), []
+
+    for index in range(len(links)):
+        all_content.append([str(title[index].getText()), links[index].attrs['href']])
+
+    return all_content
 
 
