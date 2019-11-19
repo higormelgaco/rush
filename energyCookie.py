@@ -65,4 +65,36 @@ def talosintelligence():
 
     return news
 
+#show the reults to the users
+def show(number):
+      cookies_names, count, number = ['We Live Security', 'SC Magazine', 'The Hacker News', 'Mente Binária', 'Talos Intelligence'], 0, str(number)
+      rush_cookies = {
+            '1' : welivesecurity(),
+            '2' : scmagazine(),
+            '3' : thehackernews(),
+            '4' : mentebinaria(),
+            '5' : talosintelligence()
+      }
+      try :
+            if number == '6':
+                for sources in rush_cookies.values():
+                    print('{}'.format(cookies_names[count]).center(120, ' '))
+                    count += 1
+                    for news in range(len(sources)):
+                        print()
+                        print('>> {}'.format(sources[news][0]))
+                        print(sources[news][1] + '\n')
+            else:
+                  content = rush_cookies[number]
+                  print('Main News'.center(120, ' '))
+                  for news in range(len(content)):
+                        print()
+                        print('>> {}'.format(content[news][0]))
+                        print(content[news][1])
+                        print(''.center(120,' '))
+
+      except:
+            print("An error occurred at the capture process. Try again later or verify if the page searched it's up.")
+
+      return
 
