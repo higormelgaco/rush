@@ -65,6 +65,17 @@ def talosintelligence():
 
     return news
 
+def zdnet():
+    page = requests.get('https://www.zdnet.com/topic/security/', headers={"User-Agent": "news"})
+
+    soup = BeautifulSoup(page.content, 'lxml')
+    links, news = soup.select('h3 > a'), []
+
+    for index in range(len(links)):
+        news.append([str(links[index].getText()).strip(), 'https://www.zdnet.com/topic/security{}'.format(links[index].attrs['href'])])
+
+    return news
+
 #show the reults to the users
 def show(number):
       cookies_names, count, number = ['We Live Security', 'SC Magazine', 'The Hacker News', 'Mente Binária', 'Talos Intelligence'], 0, str(number)
@@ -73,10 +84,11 @@ def show(number):
             '2' : scmagazine(),
             '3' : thehackernews(),
             '4' : mentebinaria(),
-            '5' : talosintelligence()
+            '5' : talosintelligence(),
+            '6' : zdnet()
       }
       try :
-            if number == '6':
+            if number == '7':
                 for sources in rush_cookies.values():
                     print('{}'.format(cookies_names[count]).center(120, ' '))
                     count += 1
@@ -97,4 +109,3 @@ def show(number):
             print("An error occurred at the capture process. Try again later or verify if the page searched it's up.")
 
       return
-
