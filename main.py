@@ -12,7 +12,8 @@ try:
             '[3] - thehackernews;\n'
             '[4] - mente binaria;\n'
             '[5] - talos intelligence;\n'
-            '[6] - all the sources;\n'
+            '[6] - zdnet;\n'
+            '[7] - all the sources;\n'
             'Please, insert the number of the energy cookie that you want : \n'))
 
 
