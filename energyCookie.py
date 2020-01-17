@@ -78,7 +78,7 @@ def zdnet():
 
 #show the reults to the users
 def show(number):
-      cookies_names, count, number = ['We Live Security', 'SC Magazine', 'The Hacker News', 'Mente Binária', 'Talos Intelligence'], 0, str(number)
+      cookies_names, count, number = ['We Live Security', 'SC Magazine', 'The Hacker News', 'Mente Binária', 'Talos Intelligence', 'ZDNet'], 0, str(number)
       rush_cookies = {
             '1' : welivesecurity(),
             '2' : scmagazine(),
@@ -92,14 +92,16 @@ def show(number):
                 for sources in rush_cookies.values():
                     print('{}'.format(cookies_names[count]).center(120, ' '))
                     count += 1
-                    for news in range(len(sources)):
+                    #for news in range(len(sources)):
+                    for news in range(0, 3):
                         print()
                         print('>> {}'.format(sources[news][0]))
                         print(sources[news][1] + '\n')
             else:
                   content = rush_cookies[number]
                   print('Main News'.center(120, ' '))
-                  for news in range(len(content)):
+                  #for news in range(len(content)):
+                  for news in range(0, 3):
                         print()
                         print('>> {}'.format(content[news][0]))
                         print(content[news][1])

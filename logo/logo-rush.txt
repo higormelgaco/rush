@@ -10,24 +10,24 @@
         y:-/o//hdddddddooosysssyyho`.-.......-/yhhhhhhhhh/////////+ddooooo.`
       o---s///dddddddmoooysooosyyho..--::::::-/hhhhhhddy++///////hhooos+.
      s----y/++yddddddmooohsoosshhhho:////+++ooohhhhhhhhhs/++////osoooso/`
-    y:::::y++++dmdddmhoshhsssyhhhhhhhhhhhhhhhhhhhhhhhhhddy:+++++ysss+/:
-   d/:::::/so++ohmmmdsshhyyhhhhhhhhhhhhyyyysssssyhhhhhhhddh/soo++//:--
-   h:::::::/oso+oshdyyy+yhhhhhhhhhhhhh:..``     .yhhhhhhdddd+o:::--
-   s/////////hhoooosyo:ohhhhhhhhhhhhhd. -     ``./dhhhhhddddds///
+    y:::::y++++dmdddmhoshhsssyhhhhhhhhhhhhhhhhhhhhhhhhhddy:+++++ysss+/:      ......................................................................
+   d/:::::/so++ohmmmdsshhyyhhhhhhhhhhhhyyyysssssyhhhhhhhddh/soo++//:--          Rush version 1.0
+   h:::::::/oso+oshdyyy+yhhhhhhhhhhhhh:..``     .yhhhhhhdddd+o:::--             by Higor Melgaço | Architecture and Software Development Intern
+   s/////////hhoooosyo:ohhhhhhhhhhhhhd. -     ``./dhhhhhddddds///            ......................................................................
    o////////shh..://::shhhhhhhhhhhhhhh+ ..```````/yhhhhhhddddh/
-   s////////dhhy/-:+shhhhhhhhhhhhhhhhhy``-```..../+hhhhhdddddmo			
+   s////////dhhy/-:+shhhhhhhhhhhhhhhhhy``-```..../+hhhhhdddddmo			     Tell to the Rush which news source you want to check out:
    s///////ohhhhhhhhhhhhhhhhhhhhhhhhhhd-`----:::::+dhhddddddddh
-   y///////yhhhhhhhhhhhhhhhhhhhhhhhhhhhy::///++osshdhooosyhmddm+             
-   ss+++///hhhhhhhhhhhhhhdhhhhysssyddhhhhddddhhhhhddh:---oyhddmo
-    yooo+++hhhhhhhhhhhhddsyo/:::::shyhdddhhhhhhhhdohy/```-hsdmms
-     yooooohhhhhhhhhhhddoy/.``````h+-dyhyhddhhhhddsNso   .hodmms
-      hssooyhhhhhhhhhdds/h`      `hshNyh-/+yddddyyyNso   .yodmms             .......................................................     
-       hysssdhhhhhhhhdd+:y        yosNyy-.--/ydd:oos++   /oydmms             .                                                     .
-         hyshhhhhhhhhddo-o.       /o+o+o-....-::.-/-/.   s+dmmds             . RushX version 1.0                                   .
-          syhdhhhhhhhddh-.+        /:--+`........`--.  `./+ommh              .                                                     .
-             mhdhhhhhhhdds..:`       -::``...............-:+/dm              . Coded by Higor Melgaço                              .
-               +hhhhhdds//....``````````....................:oyy             . Architecture and Software Development Intern        .
-                ydhddo........................................-oy            .......................................................
+   y///////yhhhhhhhhhhhhhhhhhhhhhhhhhhhy::///++osshdhooosyhmddm+             [1] - welivesecurity;
+   ss+++///hhhhhhhhhhhhhhdhhhhysssyddhhhhddddhhhhhddh:---oyhddmo             [2] - scmagazine;
+    yooo+++hhhhhhhhhhhhddsyo/:::::shyhdddhhhhhhhhdohy/```-hsdmms             [3] - thehackernews;
+     yooooohhhhhhhhhhhddoy/.``````h+-dyhyhddhhhhddsNso   .hodmms             [4] - mente binaria;
+      hssooyhhhhhhhhhdds/h`      `hshNyh-/+yddddyyyNso   .yodmms             [5] - talos intelligence;
+       hysssdhhhhhhhhdd+:y        yosNyy-.--/ydd:oos++   /oydmms             [6] - zdnet;
+         hyshhhhhhhhhddo-o.       /o+o+o-....-::.-/-/.   s+dmmds             [7] - all the sources;
+          syhdhhhhhhhddh-.+        /:--+`........`--.  `./+ommh
+             mhdhhhhhhhdds..:`       -::``...............-:+/dm              Please, insert the number of the energy cookie that you want :
+               +hhhhhdds//....``````````....................:oyy
+                ydhddo........................................-oy
                   ydm/..........................................-o                                                                
                     ss...:+/:/...................../++++oyyyyso+-.s          
                      o+.../-``+...................hssssoo+sssyyyy.-y
