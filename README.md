@@ -23,4 +23,4 @@ pip install -r requirements.txt
 ```
 python main.py
 ``` 
-![](./image/rush.png)
+![](visual/image/rush.png)
