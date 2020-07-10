@@ -7,7 +7,6 @@ Sources lists:
 - [SC Magazine](https://www.scmagazine.com/);
 - [The Hacker News](https://thehackernews.com/);
 - [Mente Binaria](https://www.mentebinaria.com.br/noticias/);
-- [Cisco Talos Intelligence](https://talosintelligence.com/);
 - [ZD Net](https://www.zdnet.com/topic/security/);
 
 ## Prerequisites
@@ -21,6 +20,6 @@ pip install -r requirements.txt
 
 ## Running
 ```
-python main.py
+python run.py
 ``` 
-![](visual/image/rush.png)
+![](visual/image/image.png)
